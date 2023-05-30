@@ -1,0 +1,90 @@
+body{
+    background-color: #CFDCE2;
+}
+
+.header__top{
+    position: absolute;
+    height: 120px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #004C59;
+}
+
+.header-logo{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 40px;
+    top: calc(50% - 40px/2);
+}
+
+.phone-number{
+    position: absolute;
+    width: 235px;
+    height: 18px;
+    left: 558px;
+    top: 51px;
+
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+
+    leading-trim: both;
+    text-edge: cap;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #CFDCE2;
+}
+
+.zapis {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px 30px;
+    transition: all 0.3s ease;
+  }
+  .zapis--primary {
+    background-color: #004C59;
+  }
+  .zapis--primary:hover {
+    background-color: #A3C4BC;
+  }
+  .zapis--primary:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 2px #BFD7B5;
+  }
+  .zapis--primary:active {
+    background-color: #E7EFC5;
+  }
+  .zapis--primary:disabled {
+    background-color: #F2DDA4;
+    cursor: not-allowed;
+  }
+  @media screen and (max-width: 768px) {
+    .zapis {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .zapis {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  }
+  .zapis--primary {
+    margin-left: 825px;
+    margin-top: 28px;
+  }
