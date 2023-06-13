@@ -6,51 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Стоматология А - Главная</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="header__top">
-            <div class="container">
-                <div class="light_a">
-                    <a class="header-logo" href="#">
+                <div class="wrap-logo">
+                    <a class="logo" href="#">
                         <img src="svg/white_logo.svg" width="40px" height="40px" alt="Стоматология А">
                     </a>
                 </div>
-                <a class="phone-number" href="tel:+79885880007">+7 (988) 588-00-07</a>
-                <button class="zapis zapis--primary">Записаться на приём</button>
-            </div>
-        </div>
-        <div class="header__bottom">
-            <div class="container__bottom">
-                <div class="header__nav">
-                    <ul class="header__ul">
-                        <li class="header__li"><a class="a__header" href="#">О клинике</a></li>
-                        <li class="header__li"><a class="a__header" href="#">Услуги</a></li>
-                        <li class="header__li"><a class="a__header" href="#">Цены</a></li>
-                        <li class="header__li"><a class="a__header" href="#">Специалисты</a></li>
-                        <li class="header__li"><a class="a__header" href="#">Отзывы</a></li>
-                        <li class="header__li"><a class="a__header" href="#">Контакты</a></li>
-                      </ul>
+                <div class="header-contact">
+                    <a class="phone-number" href="tel:+79885880007">+7 (988) 588-00-07</a>
+                    <button class="zapis zapis--primary">Записаться на приём</button>
                 </div>
-            </div>
+        </div>
+
+        <div class="header__bottom">
+                <nav>
+                    <ul>
+                        <li><a href="#">О клинике</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="#">Специалисты</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
         </div>
     </header>
 
-    <div class="slider">
-        <div class="slider__img"></div>
-        <button class="slider__arrow slider__arrow--left">
-          <img src="svg/arrow.svg" width="32" height="24" alt="Previous slide">
-        </button>
+<main>
+    <!-- Основной блок слайдера -->
+<div class="slider">
+  
+    <!-- Первый слайд -->
+    <div class="item">
+        <a href="#"><img src="img\Slider-img1.png"></a>
+    </div>
+  
+    <!-- Второй слайд -->
+    <div class="item">
+        <a href="#"><img src="img\Slider-img2.png"></a>
+    </div>
+  
+    <!-- Третий слайд -->
+    <div class="item">
+        <a href="#"><img src="img\Slider-img3.png"></a>
+    </div>
+  
+    <!-- Кнопки-стрелочки -->
+    <a class="previous" onclick="previousSlide()"><img src="svg/arrow.svg" width="32" height="24" alt="Previous slide"></a>
+    <a class="next" onclick="nextSlide()"><img class="right-arrow" src="svg/arrow.svg" width="32" height="24" alt="Next slide"></a>
+</div>
+    <div class="heading">
+        <h1>Стоматологическая клиника «Стоматология А»</h1> <hr>
+    </div>
+    
+</main>
 
-        <div class="slider__content">
-            <a class="a_slider__img" href="">
-                <img src="img/Slider-img1.png" alt="">
-            </a>
-          </div>
+<footer>
+    <div class="footer__left">
+        <a href="">© 2023 ООО «Стоматология А»</a><br><br>
+        <a href="">Политика конфиденциальности</a><br><br>
+        <a href="">Лицензия на осуществление мед. деятельности № Л041-01050-61/00629920 от 30.11.2022</a>
+    </div>
 
-        <button class="slider__arrow slider__arrow--right">
-          <img src="svg/arrow.svg" width="32" height="24" alt="Next slide">
-        </button>
-      </div>
+    <div class="footer__right">
+        <img class="footer__logo" src="svg/white_logo.svg" width="40px" height="40px" alt="Стоматология А">
+    </div>
+</footer>
+
+<script src="slider.js"></script>
 </body>
 </html>
