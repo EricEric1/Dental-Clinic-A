@@ -1,4 +1,5 @@
-html { font-size: 16px; }
+html { font-size: 16px;
+  font-feature-settings: 'pnum' on, 'lnum' on; }
 
 body{
     background-color: #D9EFF2;
@@ -161,25 +162,103 @@ main {
   padding-right: 5%;
 }
 
-@media screen and (min-width: 1401px){
-  main {
-    margin-top: 16%;
-  }
-}
-
 .heading{
   text-align: center;
-  font-size: 1.87vw;
+  font-size: 2.5vw;
+  margin-bottom: 5%;
+  width: -webkit-fill-available;
 }
 
 .heading h1{
   font-weight: 600;
+  width: inherit;
 }
 
 hr {
   position: relative;
   border-bottom: solid 2px;
-  margin-top: -1.5%;
+  margin-top: -1%;
+}
+
+.agitation{
+  display: flex;
+  flex-direction: row;
+  height: 895px;
+  width: -webkit-fill-available;
+}
+
+.agitation__left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.agitation__left .agitation__top-left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: inherit;
+}
+
+.agitation__top-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.agitation__top-left img{
+  margin-bottom: 20%;
+}
+
+.agitation__top-left .zapis{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #D9EFF2;
+  background: #004C59;
+}
+
+.subheading{
+  display: block;
+  white-space: nowrap;
+  width: -webkit-fill-available;
+  text-align: left;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 10%;
+}
+
+.img-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12%;
+}
+
+table{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 160%;
+}
+
+thead{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 45px;
+}
+
+.agitation__left img{
+  width: 265px;
+  height: 265px;
+}
+
+.doctor{
+  width: 613px;
+  height: 811px;
+  filter: grayscale(0.3);
 }
 
 footer{
@@ -226,4 +305,14 @@ footer a{
   font-feature-settings: 'pnum' on, 'lnum' on;
 
   margin-left: 2%;
+}
+
+@media screen and (min-width: 1401px){
+  main {
+    margin-top: 16%;
+  }
+
+  .agitation{
+    height: 1132px;
+  }
 }
