@@ -1,3 +1,10 @@
+//Открытие модального контейнера с блокировкой скролла
+document.querySelectorAll('.zapis').forEach(item => {
+    item.addEventListener('click', event => {
+        document.querySelector('.modal').style.display = 'flex';
+    })
+})
+
 const modal = document.querySelector('.modal');
 const zapisButton = document.querySelector('.zapis');
 const zapisLink = document.querySelector('.zapis__a');
