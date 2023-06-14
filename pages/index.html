@@ -44,17 +44,17 @@
     
         <!-- Первый слайд -->
         <div class="item">
-            <a href="#"><img src="img\Slider-img1.png"></a>
+            <a class="zapis__a" href="#"><img src="img\Slider-img1.png"></a>
         </div>
     
         <!-- Второй слайд -->
         <div class="item">
-            <a href="#"><img src="img\Slider-img2.png"></a>
+            <a class="zapis__a" href="#"><img src="img\Slider-img2.png"></a>
         </div>
     
         <!-- Третий слайд -->
         <div class="item">
-            <a href="#"><img src="img\Slider-img3.png"></a>
+            <a class="zapis__a" href="#"><img src="img\Slider-img3.png"></a>
         </div>
     
         <!-- Кнопки-стрелочки -->
@@ -124,7 +124,29 @@
     <article class="heading">
         <h1>Услуги</h1> <hr>
     </article>
+
+    <section class="service">
+
+
+    </section>
+
+    <div class="modal">
+        <div class="modal-content">
+        <button class="close-btn">&times;</button>
+        <h2>Запись на приём</h2>
+        <p>Пожалуйста, укажите Ваш номер телефона и мы обязательно свяжемся с Вами</p>
+        <form>
+            <input type="text" placeholder="Ваше имя (не обязательно)">
+            <input type="tel" placeholder="Номер телефона +7 (XXX) XXX XX XX" pattern="\+7 \(\d{3}\) \d{3} \d{2} \d{2}" required>
+            <button type="submit" class="booking-btn" disabled>Отправить</button>
+        </form>
+        <p>Нажимая на кнопку вы подтверждаете, что прочитали <br> и соглашаетесь с политикой обработки персональных данных.</p>
+        </div>
+    </div>
+
+
 </main>
+
 
 <footer>
     <div class="footer__left">
@@ -139,5 +161,6 @@
 </footer>
 
 <script src="slider.js"></script>
+<script src="modal.js"></script>
 </body>
 </html>

@@ -183,6 +183,7 @@ hr {
 .agitation{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   height: 895px;
   width: -webkit-fill-available;
 }
@@ -212,7 +213,6 @@ hr {
 
 .agitation__top-left .zapis{
   font-style: normal;
-  font-weight: 500;
   font-size: 32px;
   line-height: 38px;
   color: #D9EFF2;
@@ -224,7 +224,7 @@ hr {
   white-space: nowrap;
   width: -webkit-fill-available;
   text-align: left;
-  font-size: 1.7rem;
+  font-size: 1.7vw;
   font-weight: 600;
   margin-bottom: 10%;
 }
@@ -260,6 +260,90 @@ thead{
   height: 811px;
   filter: grayscale(0.3);
 }
+
+
+/* CSS */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #D9EFF2;
+  color: #004C59;
+  width: 40%;
+  height: auto;
+  padding: 20px;
+  text-align: center;
+  font-size: inherit;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.modal-content .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #004C59;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-content .close-btn:hover {
+  color: #BFD7B5;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.modal-content button {
+  background-color: #004C59;
+  color: #D9EFF2;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.modal-content p:last-child {
+  margin-bottom: 0;
+}
+
 
 footer{
   display: flex;
@@ -310,12 +394,28 @@ footer a{
 @media screen and (min-width: 1401px){
   main {
     margin-top: 16%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .zapis{
+    padding: 1em 2.3em;
+  }
+
+  .heading{
+    font-size: 2.25vw;
+  }
+
+  .doctor{
+    height: 960px;
+    width: auto;
   }
 
   .agitation{
-    height: 1132px;
+    height: auto;
   }
-  .doctor{
-    margin-left: -30%;
+
+  .agitation__left article{
+    margin-top: 5%;
   }
 }
