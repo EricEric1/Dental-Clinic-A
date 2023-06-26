@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Стоматология А - Главная</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\map.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Подключение библиотеки inputmask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
+    
 </head>
 <body>
     <header>
         <div class="header__top">
                 <div class="wrap-logo">
-                    <a class="logo" href="#">
+                    <a class="logo" href="/index.html">
                         <img src="svg/white_logo.svg" width="40px" height="40px" alt="Стоматология А">
                     </a>
                 </div>
@@ -31,7 +35,6 @@
                         <li><a href="#">Услуги</a></li>
                         <li><a href="#">Цены</a></li>
                         <li><a href="#">Специалисты</a></li>
-                        <li><a href="#">Отзывы</a></li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
                 </nav>
@@ -39,45 +42,12 @@
     </header>
 
 <main>
-    <!-- Основной блок слайдера -->
-    <div class="slider">
-    
-        <!-- Первый слайд -->
-        <div class="item">
-            <a class="zapis__a" href="#"><img src="img\Slider-img1.png"></a>
-        </div>
-    
-        <!-- Второй слайд -->
-        <div class="item">
-            <a class="zapis__a" href="#"><img src="img\Slider-img2.png"></a>
-        </div>
-    
-        <!-- Третий слайд -->
-        <div class="item">
-            <a class="zapis__a" href="#"><img src="img\Slider-img3.png"></a>
-        </div>
-    
-        <!-- Кнопки-стрелочки -->
-        <a class="previous" onclick="previousSlide()"><img src="svg/arrow.svg" width="32" height="24" alt="Previous slide"></a>
-        <a class="next" onclick="nextSlide()"><img class="right-arrow" src="svg/arrow.svg" width="32" height="24" alt="Next slide"></a>
-    </div>
-
     <article class="heading">
-        <h1>Стоматологическая клиника «Стоматология А»</h1> <hr>
+        <h1>Контакты</h1> <hr>
     </article>
     
-    <section class="agitation">
+    <section class="agitation" style="height: 400px;">
         <div class="agitation__left">
-            <div class="agitation__top-left">
-                <span class="subheading">Клиника, где здоровье зубов – это сокровище,<br>
-                    а цены – это ключ к нему!</span>
-                <div class="img-btn">
-                    <img src="svg/fluent-mdl2_double-down-arrow.svg" alt="">
-                    <button class="zapis zapis--primary">Записаться на приём</button>
-                </div>
-            </div>
-
-            <div>
                 <article class="working-time">
                     <table>
                         <thead>
@@ -113,21 +83,11 @@
                     </table>
 
                 </article>
-            </div>
         </div>
 
-        <div class="doctor__container">
-            <img class="doctor" src="img/doctor1_crop.png" alt="Доктор">
+        <div id="map" class="map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A755e293a634d0ca334fbcec6e82d65f8479088ad9b4980dc3ae93ca7fd688a37&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
         </div>
-    </section>
-
-    <article class="heading">
-        <h1>Услуги</h1> <hr>
-    </article>
-
-    <section class="service">
-
-
     </section>
 
     <div class="modal">
@@ -136,8 +96,8 @@
         <h2>Запись на приём</h2>
         <p>Пожалуйста, укажите Ваш номер телефона и мы обязательно свяжемся с Вами</p>
         <form>
-            <input type="text" placeholder="Ваше имя (не обязательно)">
-            <input type="tel" placeholder="Номер телефона +7 (XXX) XXX XX XX" pattern="\+7 \(\d{3}\) \d{3} \d{2} \d{2}" required>
+            <input type="text" id="name-input" name="name" placeholder="Ваше имя (не обязательно)" autocomplete="text" maxlength="50">
+            <input type="tel" id="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX" autocomplete="tel" maxlength="11" required>
             <button type="submit" class="booking-btn" disabled>Отправить</button>
         </form>
         <p>Нажимая на кнопку вы подтверждаете, что прочитали <br> и соглашаетесь с политикой обработки персональных данных.</p>
@@ -156,11 +116,12 @@
     </div>
 
     <div class="footer__right">
-        <img class="footer__logo" src="svg/white_logo.svg" width="40px" height="40px" alt="Стоматология А">
+        <a class="logo" href="#">
+            <img src="svg/white_logo.svg" width="40px" height="40px" alt="Стоматология А">
+        </a>
     </div>
 </footer>
 
-<script src="slider.js"></script>
 <script src="modal.js"></script>
 </body>
 </html>

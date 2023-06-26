@@ -1,0 +1,9 @@
+.map{
+    margin-left: 8%;
+    width: 100%;
+    height: min-content;
+    filter: hue-rotate(-189deg) grayscale(0.2);
+    border: 10px solid #5E2E00;
+    border-radius: 20px;
+    overflow: auto;
+}

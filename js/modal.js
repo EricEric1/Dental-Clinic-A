@@ -1,4 +1,3 @@
-//Открытие модального контейнера с блокировкой скролла
 document.querySelectorAll('.zapis').forEach(item => {
     item.addEventListener('click', event => {
         document.querySelector('.modal').style.display = 'flex';
@@ -35,32 +34,7 @@ window.addEventListener('keydown', (event) => {
   }
 });
 
-const telInput = document.querySelector('input[type="tel"]');
-const bookingButton = document.querySelector('.booking-btn');
-
-telInput.addEventListener('input', () => {
-  const telValue = telInput.value.replace(/\D/g, '');
-  const telLength = telValue.length;
-
-  if (telLength === 11 && telValue.startsWith('7')) {
-    bookingButton.disabled = false;
-  } else {
-    bookingButton.disabled = true;
-  }
-
-  let formattedTelValue = '';
-
-  if (telLength > 0) {
-    formattedTelValue = `+7 (${telValue.substring(0, 3)}`;
-  }
-
-  if (telLength > 3) {
-    formattedTelValue += `) ${telValue.substring(3, 6)}`;
-  }
-
-  if (telLength > 6) {
-    formattedTelValue += `-${telValue.substring(6, 8)}-${telValue.substring(8, 10)}`;
-  }
-
-  telInput.value = formattedTelValue;
-});
+var phoneMaskSettings = {
+  mask: '+7 (999) 999-99-99',
+  placeholder: '+7 (___) ___-__-__'};
+  $('#phone').inputmask(phoneMaskSettings);
