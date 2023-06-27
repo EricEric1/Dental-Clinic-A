@@ -141,7 +141,7 @@
             <input type="tel" id="phone-input" name="phone" placeholder="Номер телефона" autocomplete="tel" maxlength="11" required>
             <button type="submit" class="booking-btn" disabled>Отправить</button>
         </form>
-        <p>Нажимая на кнопку вы подтверждаете, что прочитали <br> и соглашаетесь с политикой обработки персональных данных.</p>
+        <p>Нажимая на кнопку вы подтверждаете, что прочитали <br> и соглашаетесь с  <a href="private_police.pdf" target="_blank">политикой обработки</a> персональных данных.</p>
         </div>
     </div>
 
@@ -163,7 +163,7 @@
     </div>
 </footer>
 
-<script src="slider.js"></script>
-<script src="modal.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/modal.js"></script>
 </body>
 </html>

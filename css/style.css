@@ -3,15 +3,9 @@ html { font-size: 16px;
 }
 
 body{
-    display: flex;
-    flex-direction: column;
     background-color: #D9EFF2;
     margin: 0%;
     font-family: 'Raleway', sans-serif;
-    position: absolute;
-    width: -webkit-fill-available;
-    left: 0;
-    bottom: 0;
 }
 
 button{
@@ -197,6 +191,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: -webkit-fill-available;
 }
 
 .agitation__left .agitation__top-left{
@@ -263,7 +258,7 @@ thead{
 .doctor{
   width: 613px;
   height: 811px;
-  filter: grayscale(0.3);
+  filter: grayscale(0.35) contrast(1.05);
 }
 
 
