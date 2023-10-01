@@ -250,9 +250,25 @@ thead{
   line-height: 45px;
 }
 
-.agitation__left img{
-  width: 265px;
-  height: 265px;
+
+.agitation__left .location, .phone{
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.agitation__left span{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.agitation__left a{
+  white-space: nowrap;
+  text-decoration: none;
+  color: black;
 }
 
 .doctor{

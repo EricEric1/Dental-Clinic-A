@@ -9,15 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Подключение библиотеки inputmask -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
-    
 </head>
 <body>
     <header>
         <div class="header__top">
                 <div class="wrap-logo">
-                    <a class="logo" href="#">
+                    <a class="logo" href="/index.php">
                         <img src="svg/white_logo.svg" width="40px" height="40px" alt="Стоматология А">
                     </a>
                 </div>
@@ -165,5 +162,8 @@
 
 <script src="js/slider.js"></script>
 <script src="js/modal.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Подключение библиотеки inputmask -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
 </body>
 </html>

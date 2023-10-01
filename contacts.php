@@ -18,7 +18,7 @@
     <header>
         <div class="header__top">
                 <div class="wrap-logo">
-                    <a class="logo" href="/index.html">
+                    <a class="logo" href="/index.php">
                         <img src="svg/white_logo.svg" width="40px" height="40px" alt="Стоматология А">
                     </a>
                 </div>
@@ -48,6 +48,8 @@
     
     <section class="agitation" style="height: 400px;">
         <div class="agitation__left">
+            <span><img class="location" src="/svg/location.svg" alt="Местоположение">г. Батайск, ул. Московская 156 д.</span>
+            <span><a class="phone-number" href="tel:+79885880007"><img class="phone" src="/svg/phone.svg" alt="Номер телефона">+7 (988) 588-00-07</a></span>
                 <article class="working-time">
                     <table>
                         <thead>
@@ -100,7 +102,7 @@
             <input type="tel" id="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX" autocomplete="tel" maxlength="11" required>
             <button type="submit" class="booking-btn" disabled>Отправить</button>
         </form>
-        <p>Нажимая на кнопку вы подтверждаете, что прочитали <br> и соглашаетесь с политикой обработки персональных данных.</p>
+        <p>Нажимая на кнопку вы подтверждаете, что прочитали <br> и соглашаетесь с  <a href="private_police.pdf" target="_blank">политикой обработки</a> персональных данных.</p>
         </div>
     </div>
 
@@ -122,6 +124,6 @@
     </div>
 </footer>
 
-<script src="modal.js"></script>
+<script src="js/modal.js"></script>
 </body>
 </html>
