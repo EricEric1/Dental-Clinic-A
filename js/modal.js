@@ -13,10 +13,14 @@ zapisButton.addEventListener('click', () => {
   modal.style.display = 'flex';
 });
 
-zapisLink.addEventListener('click', (event) => {
-  event.preventDefault();
-  modal.style.display = 'flex';
-});
+console.log(zapisLink)
+
+if(zapisLink){
+  zapisLink.addEventListener('click', (event) => {
+    event.preventDefault();
+    modal.style.display = 'flex';
+  });
+}
 
 closeButton.addEventListener('click', () => {
   modal.style.display = 'none';
@@ -34,7 +38,16 @@ window.addEventListener('keydown', (event) => {
   }
 });
 
-var phoneMaskSettings = {
-  mask: '+7 (999) 999-99-99',
-  placeholder: '+7 (___) ___-__-__'};
-  $('#phone').inputmask(phoneMaskSettings);
+$(document).ready(function() {
+  var phoneMaskSettings = {
+    mask: '+7 (999) 999-99-99',
+    placeholder: '+7 (___) ___-__-__'
+  };
+  $('#phone-input').inputmask(phoneMaskSettings);
+
+  $('#phone-input').on('input', function() {
+    if ($(this).inputmask('isComplete')) {
+      console.log($(this).val())
+    }
+  });
+});

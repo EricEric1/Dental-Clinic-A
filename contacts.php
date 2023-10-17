@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Подключение библиотеки inputmask -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
-    
 </head>
 <body>
     <header>
@@ -98,9 +98,9 @@
         <h2>Запись на приём</h2>
         <p>Пожалуйста, укажите Ваш номер телефона и мы обязательно свяжемся с Вами</p>
         <form>
-            <input type="text" id="name-input" name="name" placeholder="Ваше имя (не обязательно)" autocomplete="text" maxlength="50">
-            <input type="tel" id="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX" autocomplete="tel" maxlength="11" required>
-            <button type="submit" class="booking-btn" disabled>Отправить</button>
+            <input type="text" id="name-input" name="name" placeholder="Ваше имя (не обязательно)" autocomplete="text" maxlength="20">
+            <input type="tel" id="phone-input" name="phone" placeholder="Номер телефона" autocomplete="tel" maxlength="18" required>
+            <button type="submit" class="booking-btn">Отправить</button>
         </form>
         <p>Нажимая на кнопку вы подтверждаете, что прочитали <br> и соглашаетесь с  <a href="private_police.pdf" target="_blank">политикой обработки</a> персональных данных.</p>
         </div>
