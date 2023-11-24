@@ -3,9 +3,12 @@ html { font-size: 16px;
 }
 
 body{
-    background-color: #D9EFF2;
-    margin: 0%;
-    font-family: 'Raleway', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #D9EFF2;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 button{
@@ -155,10 +158,15 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
   align-content: center;
   margin-top: 20%;
   padding-left: 5%;
   padding-right: 5%;
+}
+
+.Site-content{
+  flex: 1;
 }
 
 .heading{
@@ -276,22 +284,36 @@ thead{
   color: black;
 }
 
+.doctor__container{
+  width: fit-content;
+  height: fit-content;
+}
+
 .doctor{
-  width: 613px;
-  height: 811px;
+  /* width: 613px;
+  height: 811px; */
+  width: auto;
+  height: auto;
   filter: grayscale(0.35) contrast(1.05);
 }
 
 /* Обвертка для обратной связи и карты */
-.main__down-box{
+.down-box{
   display: flex;
   flex-direction: row;
+  width: -webkit-fill-available;
 }
 
-.main__down-box__feedback{
+.feedback * {
+  box-sizing: border-box;
+  border: none;
+}
+
+.feedback{
+  flex: 1;
   width: 602px;
   height: 271px;
-  background: #00798F;
+  /* background: #00798F; */
 }
 
 .contact-us{
@@ -305,25 +327,27 @@ thead{
   width: 325px;
 }
 
-.fb-input, .fb-input * {
-  box-sizing: border-box;
-  }
-
-.fb-input{
+.feedback-input{
+  font: 600 14px 'Raleway', sans-serif;
   background: #bfd7b5;
   border-radius: 20px;
   width: 286px;
   height: 50px;
-  position: relative;
+  padding-left: 2%;
+  margin-bottom: 3%;
 }
 
-.map{
-  width: 568px;
-  height: 317px;
-  background: #BFD7B5;
-}
-
-
+.booking-btn {
+  box-sizing: border-box;
+  box-shadow: none;
+  background: #004c59;
+  border-radius: 20px;
+  padding: 0px 16px 0px 16px;
+  width: 230px;
+  height: 50px;
+  color: #d9eff2;
+  font: 600 21px 'Raleway-SemiBold', sans-serif;
+  }
 
 .modal {
   position: fixed;
@@ -411,13 +435,10 @@ thead{
 
 footer{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  position: absolute;
+  bottom: 0;
   width: -webkit-fill-available;
   background-color: #004C59;
-  z-index: 1;
   border-radius: 20px 20px 0px 0px;
   margin-top: 10%;
   padding: 17px 80px;

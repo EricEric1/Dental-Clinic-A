@@ -1,9 +1,13 @@
 .map{
-    margin-left: 8%;
-    width: 100%;
-    height: min-content;
+    height: inherit;
+    width: 45%;
     filter: hue-rotate(-189deg) grayscale(0.2);
     border: 10px solid #5E2E00;
     border-radius: 20px;
     overflow: auto;
+}
+.map__frame{
+    flex: none;
+    height: 400px;
+    width: 100%;
 }
