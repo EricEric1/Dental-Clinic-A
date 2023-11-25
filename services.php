@@ -13,7 +13,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#D9EFF2">
 
-    <title>Специалисты</title>
+    <title>Услуги</title>
     <link rel="stylesheet" href="css\style.css">
 
     <!-- Подключение шрифта Raleway -->
@@ -60,10 +60,10 @@
 
     <main class="Site-content">
     <article class="heading">
-        <h1>Наши специалисты</h1> <hr>
+        <h1>Услуги</h1> <hr>
     </article>
 
-    
+
 
     </main>
 
